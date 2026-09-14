@@ -1,8 +1,333 @@
-<html> 
+<!DOCTYPE html>
+<html lang="th">
 <head>
-    <title> ยินดีต้อนรับ </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>จังหวัดลำปาง | เมืองรถม้า</title>
+
+<style>
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: "Tahoma", sans-serif;
+background-color: #fff8ed;
+color: #333;
+line-height: 1.7;
+}
+
+header {
+background: linear-gradient(135deg, #7b3f00, #c87900);
+color: white;
+text-align: center;
+padding: 50px 20px;
+}
+
+header h1 {
+font-size: 42px;
+margin-bottom: 10px;
+}
+
+header p {
+font-size: 20px;
+}
+
+nav {
+background-color: #4e2600;
+text-align: center;
+padding: 15px;
+position: sticky;
+top: 0;
+z-index: 10;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+margin: 0 12px;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #ffd27f;
+}
+
+.container {
+width: 90%;
+max-width: 1100px;
+margin: auto;
+}
+
+.hero {
+margin-top: 30px;
+background-color: white;
+border-radius: 15px;
+overflow: hidden;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== ใส่รูปภาพจังหวัดลำปางตรงนี้ ===== */
+.hero img {
+width: 100%;
+height: 400px;
+object-fit: cover;
+}
+
+.hero-text {
+padding: 30px;
+text-align: center;
+}
+
+.hero-text h2 {
+color: #8b4500;
+margin-bottom: 15px;
+}
+
+.section-title {
+text-align: center;
+margin: 50px 0 25px;
+color: #7b3f00;
+}
+
+.cards {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 20px;
+padding-bottom: 50px;
+}
+
+.card {
+background-color: white;
+border-radius: 12px;
+overflow: hidden;
+box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+/* ===== ใส่รูปภาพของแต่ละหัวข้อตรงนี้ ===== */
+.card img {
+width: 100%;
+height: 180px;
+object-fit: cover;
+}
+
+.card-content {
+padding: 20px;
+}
+
+.card h3 {
+color: #8b4500;
+margin-bottom: 10px;
+}
+
+.button {
+display: inline-block;
+margin-top: 15px;
+padding: 10px 20px;
+background-color: #b86600;
+color: white;
+text-decoration: none;
+border-radius: 8px;
+}
+
+.button:hover {
+background-color: #7b3f00;
+}
+
+footer {
+background-color: #4e2600;
+color: white;
+text-align: center;
+padding: 25px;
+}
+
+@media (max-width: 600px) {
+header h1 {
+font-size: 30px;
+}
+
+nav a {
+display: inline-block;
+margin: 5px;
+}
+}
+</style>
 </head>
+
 <body>
-    <h1><font color = Pink>ยินดีต้อนรับเข้าสู่เว็บไซต์ของ ณัฐสุดา</font></h1>
+
+<header>
+<h1>จังหวัดลำปาง</h1>
+<p>เมืองรถม้า งดงามด้วยวัฒนธรรมล้านนา</p>
+</header>
+
+<nav>
+<a href="index.html">หน้าหลัก</a>
+<a href="history.html">ประวัติ</a>
+<a href="attractions.html">สถานที่ท่องเที่ยว</a>
+<a href="culture.html">วัฒนธรรม</a>
+<a href="food.html">อาหาร</a>
+<a href="travel.html">การเดินทาง</a>
+</nav>
+
+<main class="container">
+
+<section class="hero">
+
+<!-- =========================================
+ใส่รูปภาพหลักของจังหวัดลำปางตรงนี้
+ตัวอย่าง: images/lampang.jpg
+========================================= -->
+<img src="D:\ณัฐธัญญา\ลำปาง\เขา.jpeg" alt="จังหวัดลำปาง">
+
+<div class="hero-text">
+<h2>ยินดีต้อนรับสู่จังหวัดลำปาง</h2>
+
+<p>
+ลำปางเป็นจังหวัดในภาคเหนือของประเทศไทย
+มีเอกลักษณ์โดดเด่นทั้งด้านศิลปวัฒนธรรมล้านนา
+วัดวาอาราม ธรรมชาติ และรถม้าที่เป็นสัญลักษณ์สำคัญของจังหวัด
+</p>
+
+<p>
+เว็บไซต์นี้จัดทำขึ้นเพื่อแนะนำข้อมูลที่น่าสนใจ
+และสถานที่สำคัญของจังหวัดลำปาง
+</p>
+</div>
+</section>
+
+
+<h2 class="section-title">เรื่องน่ารู้เกี่ยวกับลำปาง</h2>
+
+<section class="cards">
+
+<!-- การ์ดที่ 1 -->
+<div class="card">
+
+<!-- ===== ใส่รูปประวัติลำปางตรงนี้ ===== -->
+<img src="D:\ณัฐธัญญา\ลำปาง\สะพาน.jpg" alt="ประวัติจังหวัดลำปาง">
+
+<div class="card-content">
+<h3>📜 ประวัติความเป็นมา</h3>
+
+<p>
+เรียนรู้ประวัติศาสตร์และความเป็นมาของจังหวัดลำปาง
+เมืองเก่าแก่ที่มีความสำคัญต่อภาคเหนือ
+</p>
+
+<!-- ===== ลิงก์ไปหน้าประวัติ ===== -->
+<a href="history.html" class="button">
+อ่านเพิ่มเติม
+</a>
+</div>
+</div>
+
+
+<!-- การ์ดที่ 2 -->
+<div class="card">
+
+<!-- ===== ใส่รูปสถานที่ท่องเที่ยวตรงนี้ ===== -->
+<img src="D:\ณัฐธัญญา\ลำปาง\ตก.jpg" alt="สถานที่ท่องเที่ยวลำปาง">
+
+<div class="card-content">
+<h3>🏞️ สถานที่ท่องเที่ยว</h3>
+
+<p>
+พบกับสถานที่ท่องเที่ยวที่น่าสนใจ
+ทั้งวัด ธรรมชาติ และสถานที่สำคัญของลำปาง
+</p>
+
+<!-- ===== ลิงก์ไปหน้าสถานที่ท่องเที่ยว ===== -->
+<a href="attractions.html" class="button">
+ดูสถานที่ท่องเที่ยว
+</a>
+</div>
+</div>
+
+
+<!-- การ์ดที่ 3 -->
+<div class="card">
+
+<!-- ===== ใส่รูปวัฒนธรรมตรงนี้ ===== -->
+<img src="D:\ณัฐธัญญา\ลำปาง\วัด.jpg" alt="วัฒนธรรมลำปาง">
+
+<div class="card-content">
+<h3>🎎 วัฒนธรรมและประเพณี</h3>
+
+<p>
+ทำความรู้จักกับวัฒนธรรมล้านนา
+และประเพณีที่มีเอกลักษณ์ของจังหวัดลำปาง
+</p>
+
+<!-- ===== ลิงก์ไปหน้าวัฒนธรรม ===== -->
+<a href="culture.html" class="button">
+ดูวัฒนธรรม
+</a>
+</div>
+</div>
+
+
+<!-- การ์ดที่ 4 -->
+<div class="card">
+
+<!-- ===== ใส่รูปอาหารตรงนี้ ===== -->
+<img src="D:\ณัฐธัญญา\ลำปาง\ข้าว.png" alt="อาหารพื้นเมืองลำปาง">
+
+<div class="card-content">
+<h3>🍜 อาหารพื้นเมือง</h3>
+
+<p>
+แนะนำอาหารพื้นเมืองและเมนูที่นักท่องเที่ยว
+ไม่ควรพลาดเมื่อมาเยือนลำปาง
+</p>
+
+<!-- ===== ลิงก์ไปหน้าอาหาร ===== -->
+<a href="food.html" class="button">
+ดูอาหารพื้นเมือง
+</a>
+</div>
+</div>
+
+
+<!-- การ์ดที่ 5 -->
+<div class="card">
+
+<!-- ===== ใส่รูปการเดินทางตรงนี้ ===== -->
+<img src="D:\ณัฐธัญญา\ลำปาง\ม้า.jpg" alt="การเดินทางไปลำปาง">
+
+<div class="card-content">
+<h3>🚗 การเดินทาง</h3>
+
+<p>
+ข้อมูลเบื้องต้นเกี่ยวกับการเดินทาง
+มายังจังหวัดลำปางจากสถานที่ต่าง ๆ
+</p>
+
+<!-- ===== ลิงก์ไปหน้าการเดินทาง ===== -->
+<a href="travel.html" class="button">
+ดูข้อมูลการเดินทาง
+</a>
+</div>
+</div>
+
+</section>
+
+</main>
+
+<footer>
+<p>เว็บไซต์แนะนำจังหวัดลำปาง</p>
+<p>จัดทำเพื่อการศึกษา</p>
+<p>น.ส.ณัฐธัญญา เจริญสุข เลขที่23</p>
+<p>น.ส.ณัฐสุดา กุลบุญ เลขที่37</p>
+<p>ม.6/2</p>
+</footer>
+
 </body>
 </html>
